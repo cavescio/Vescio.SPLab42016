@@ -1,0 +1,15 @@
+<div class="CajaInicio animated bounceInRight">
+	<h1>Ingrese sus datos</h1>
+</div>
+<div class="CajaUno animated bounceInDown">
+	<form id="FormIngreso">
+		<input type="text"  placeholder="Correo Electrónico" id="txtMail" ng-model="usuario.mail" ng-readonly="bloquear">
+		<br>
+		<input type="text"  placeholder="Nombre de Usuario" id="txtUser" ng-model="usuario.user">
+		<br>
+		<input type="text"  placeholder="Contraseña" id="txtPass" ng-model="usuario.pass">
+		<br>
+		<a class="btn btn-info " name="guardar" ng-click="GuardarDatos()" ><span class="glyphicon glyphicon-ok">&nbsp;</span>{{tipo}}</a>
+		<input type="hidden"  id="hdnId" ng-model="usuario.id">
+	</form>
+</div>
